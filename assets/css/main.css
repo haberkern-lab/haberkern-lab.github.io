@@ -106,13 +106,10 @@ html {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/background_landing.jpg");
-		background-size: cover,
- cover;
-		background-attachment: fixed,
- fixed;
-		background-position: center,
- center;
+		background-image: linear-gradient(to right, rgba(46, 49, 65, .85), rgba(46, 49, 65, .85)), url("../../images/background_landing.jpg");
+		background-size: cover, cover;
+		background-attachment: fixed, fixed;
+		background-position: center,center;
  		background-repeat: no-repeat;
 	}
 
@@ -3030,16 +3027,16 @@ html {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin: 0 0 2em 0;
+	margin: 0 0 0em 0;
     align-items: center;
     justify-content: center
 }
 
 	.tiles article {
-		padding: 1.75em 1.75em 0em 1.75em ;
+		padding: 0em 0em 0em 1.7em ;
 		background-color: #6d5fb200;
 		border-radius: 5px;
-		margin: .5em .5em .5em 0;
+		margin: .25em .25em 0em 0em;
 		width: 100%;
 		display: flex;
 		align-items: center;
@@ -3068,7 +3065,7 @@ html {
 			display: block;
 			margin-bottom: 0em;
 			margin-left: -1.75em;
-			margin-top: -1.75em;
+			margin-top: -1em;
 			position: relative;
 			width: calc(20% + .1em);
 		}
@@ -3081,7 +3078,7 @@ html {
 	@media screen and (max-width: 1000px) {
 
 		.tiles article {
-			padding: 1.5em 1.5em 0.1em 1.5em ;
+			padding: 1em 0em 0em 1.75em ;
 			margin: 0.875em 1.75em 0.875em 0;
 			width: 100%;
 		}
@@ -3371,7 +3368,7 @@ html {
 /* Title field */
 
 .titlefield {
-	padding: 2em 3em 1em 5em ;
+	padding: 2em 3em 1.5em 5em ;
 	width: 100%;
 }
 
@@ -3397,7 +3394,6 @@ html {
 	  0px 0px 0 -0px #6d5fb2;
 
   }
-
 
 .framed.style2 {
 	box-shadow:
@@ -3484,7 +3480,7 @@ html {
 		position: relative;
 	}
 
-		.wrapper:before, .wrapper:after {
+		.wrapper:before, .wrapper:after, .wrapper.alt3:before{
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");
 		}
 
@@ -3496,7 +3492,7 @@ html {
 			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
 		}
 
-		.wrapper:before, .wrapper:after {
+		.wrapper:before, .wrapper:after{
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 			content: '';
@@ -3506,12 +3502,12 @@ html {
 			width: 100%;
 		}
 
-		.wrapper:before {
+		.wrapper:before{
 			left: 0;
 			top: -6.5em;
 		}
 
-		.wrapper:after {
+		.wrapper:after{
 			-moz-transform: scaleY(-1);
 			-webkit-transform: scaleY(-1);
 			-ms-transform: scaleY(-1);
@@ -3520,7 +3516,7 @@ html {
 			left: 0;
 		}
 
-		.wrapper.alt:before {
+		.wrapper.alt:before, .wrapper.alt2:before {
 			-moz-transform: scaleX(-1);
 			-webkit-transform: scaleX(-1);
 			-ms-transform: scaleX(-1);
@@ -3534,13 +3530,6 @@ html {
 			transform: scaleY(-1) scaleX(-1);
 		}
 
-		.wrapper.alt2:before {
-			-moz-transform: scaleX(-1);
-			-webkit-transform: scaleX(-1);
-			-ms-transform: scaleX(-1);
-			transform: scaleX(-1);
-		}
-
 		.wrapper.alt2:after {
 			-moz-transform: scaleY(0) scaleX(-1);
 			-webkit-transform: scaleY(0) scaleX(-1);
@@ -3548,6 +3537,31 @@ html {
 			transform: scaleY(0) scaleX(-1);
 		}
 
+		.wrapper.alt3:after, .wrapper.alt4:before {
+			-moz-transform: scaleY(0) scaleX(-1);
+			-webkit-transform: scaleY(0) scaleX(-1);
+			-ms-transform: scaleY(0) scaleX(-1);
+			transform: scaleY(0) scaleX(-1);
+		}
+
+		.wrapper.alt4:after {
+			-moz-transform: scaleY(-1);
+			-webkit-transform: scaleY(-1);
+			-ms-transform: scaleY(-1);
+			transform: scaleY(-1);
+		}
+
+		.wrapper.alt4{
+			top: -6.5em;
+		}
+
+		@media screen and (max-width: 1000px) {
+
+			.wrapper.alt4{
+				top: -2.5em;
+			}
+		}
+		
 		.wrapper .inner {
 			padding: 3em 0 1em 0 ;
 			margin: 0 auto;
@@ -3555,19 +3569,19 @@ html {
 		}
 
 		.wrapper.style2 {
-			background-color: #353849;
+			background-color: #3f4357;
 		}
 
 			.wrapper.style2:before, .wrapper.style2:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23353849%3B' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233f4357%3B' /%3E%3C/svg%3E");
 			}
 
 			.wrapper.style2:before {
-				box-shadow: inset 0 -1px 0 0 #353849, 0 1px 0 0 #353849;
+				box-shadow: inset 0 -1px 0 0 #3f4357, 0 1px 0 0 #3f4357;
 			}
 
 			.wrapper.style2:after {
-				box-shadow: inset 0 -1px 0 0 #353849, 0 1px 0 0 #353849;
+				box-shadow: inset 0 -1px 0 0 #3f4357, 0 1px 0 0 #3f4357;
 			}
 
 		.wrapper.style3 {
@@ -3632,6 +3646,22 @@ html {
 
 			.wrapper.style6:after {
 				box-shadow: inset 0 -1px 0 0 #8979dc, 0 1px 0 0 #8979dc;
+			}
+
+		.wrapper.style7 {
+			background-color: #53478d;
+		}
+
+			.wrapper.style7:before, .wrapper.style7:after {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2353478d%3B' /%3E%3C/svg%3E");
+			}
+
+			.wrapper.style7:before {
+				box-shadow: inset 0 -1px 0 0 #53478d, 0 1px 0 0 #53478d;
+			}
+
+			.wrapper.style7:after {
+				box-shadow: inset 0 -1px 0 0 #53478d, 0 1px 0 0 #53478d;
 			}
 
 		.wrapper.spotlight {
@@ -3879,7 +3909,8 @@ html {
 .fullcolumn {
 	float: left;
 	width: 33.33%;
-	padding: 20px;
+	padding: 1em;
+	margin: 0 auto;
 }
 
 	@media screen and (max-width: 736px) {
@@ -3967,7 +3998,7 @@ html {
 		#footer {
 			background-color: #2e3141;
 			background-attachment: fixed;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/background_landing.jpg");
+			background-image: linear-gradient(to right, rgba(46, 49, 65, .85), rgba(46, 49, 65, .85)), url("../../images/background_landing.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
