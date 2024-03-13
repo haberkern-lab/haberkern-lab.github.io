@@ -106,7 +106,7 @@ html {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to right, rgba(46, 49, 65, .85), rgba(46, 49, 65, .85)), url("../../images/background_landing.heic");
+		background-image: linear-gradient(to right, rgba(46, 49, 65, .85), rgba(46, 49, 65, .85)), url("../../images/background_landing.jpg");
 		background-size: cover, cover;
 		background-attachment: fixed, fixed;
 		background-position: center,center;
@@ -3292,7 +3292,7 @@ html {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../../images/background_landing.heic");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../../images/background_landing.jpg");
 				background-size: auto,cover;
 				background-position: center,center;
 				margin-bottom: -6.5em;
@@ -3305,7 +3305,7 @@ html {
 			#banner {
 				padding: 7em 3em 12.375em 3em ;
 				margin-bottom: -4.75em;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../../images/background_landing_small.heic");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../../images/background_landing_small.jpg");
 			}
 
 				#banner .inner {
@@ -3404,7 +3404,7 @@ html {
 
 	#wrapper > header {
 		padding: 11em 0 2.25em 0 ;
-		background-image: linear-gradient(to right, rgba(46, 49, 65, .85), rgba(46, 49, 65, .85)), url("../../images/background_landing.heic");
+		background-image: linear-gradient(to right, rgba(46, 49, 65, .85), rgba(46, 49, 65, .85)), url("../../images/background_landing.jpg");
 		background-attachment: fixed, fixed;
 		background-size: cover,cover;
 		background-position: center,0% 30%;
@@ -3912,7 +3912,7 @@ html {
 		#footer {
 			background-color: #2e3141;
 			background-attachment: fixed;
-			background-image: linear-gradient(to right, rgba(46, 49, 65, .85), rgba(46, 49, 65, .85)), url("../../images/background_landing.heic");
+			background-image: linear-gradient(to right, rgba(46, 49, 65, .85), rgba(46, 49, 65, .85)), url("../../images/background_landing.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -3931,7 +3931,7 @@ html {
 			background-attachment: fixed;
 			background-size: auto, cover;
 			background-position: center, center;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/background_landing_small.heic");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/background_landing_small.jpg");
 		}
 
 			#footer .inner {
@@ -3962,7 +3962,7 @@ html {
 			margin-top: -2.5em;
 			padding-top: 2.5em;
 			background-attachment: fixed;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.85)), url("../../images/background_landing_small.heic");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.85)), url("../../images/background_landing_small.jpg");
 
 		}
 
