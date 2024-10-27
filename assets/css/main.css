@@ -3142,12 +3142,10 @@ html {
 			text-transform: uppercase;
 			top: 0.7em;
 			overflow: hidden;
-
 		}
 
-			#header nav a {
+		#header nav a {
 				border: 0;
-				display: inline-block;
 				padding: 0 1em;
 			}
 
@@ -3160,6 +3158,10 @@ html {
 				visibility: hidden;
 			}
 
+		#header nav .icon {
+			display: none;
+			}
+
 		@media screen and (max-width: 736px) {
 
 			#header {
@@ -3167,63 +3169,84 @@ html {
 				line-height: 2.75em;
 			}
 
-			#header a {
-				font-size: smaller;
+			#header nav {
+				top: 0;
+				right: 0;
+				height: inherit;
+				line-height: inherit;
+				right: 0.7em;
 			}
 
-				#header nav {
-					top: 0;
-					right: 0;
-					height: inherit;
-					line-height: inherit;
-				}
-
-					#header nav a {
-						height: inherit;
-						line-height: inherit;
-						font-size: x-small;
-						padding: 0%;
-					}
-
+			#header nav a {
+				height: inherit;
+				line-height: inherit;
+				font-size: small;
+				padding: 0 0.4em;
+			}
 		}
 
-		@media screen and (max-width: 666px) {
+		@media screen and (max-width: 600px) {
 
 			#header {
-				height: 2em;
-				line-height: 2em;
+				height: 2.5em;
+				line-height: 2.5em;
 			}
-		}
 
-		nav.topnav {
-			overflow: hidden;
-		}	
-			nav.topnav .icon {
-				display: none;
+			#header a {
+				font-size: small;
 			}
-			
-		@media screen and (max-width: 650px) {
-			nav.topnav a:not(:first-child) {display: none;}
-			nav.topnav .icon {
+
+			#header .mynav {
+				overflow: hidden;
+			}
+
+			#header nav a {
+				height: inherit;
+				line-height: inherit;
+				font-size: x-small;
+				padding: 0 0.1em;
+			}
+
+			/*
+			#header .mynav a:not(:first-child) {display: none;}
+			#header .mynav a.icon {
 			  float: right;
 			  display: block;
 			}
-		}
-		  
-		@media screen and (max-width: 650px) {
-			nav.topnav.responsive .icon {
-			  position: absolute;
-			  right: 0;
-			  top: 0;
-			}
-			nav.topnav.responsive {
-			  position: absolute;
-			  float: none;
+
+			#header .mynav a {display: none;}
+			#header .mynav a.icon {
+			  float: right;
 			  display: block;
-			  text-align: left;
-			  display: flex;
+			  font-size: 1.5em;
+			  padding: 0 1em;
+			}
+			*/
+		  }
+		
+		/*
+		@media screen and (max-width: 600px) {
+			#header .mynav.responsive {
+				position: relative;
+				background-color: #303349
+			}
+			
+			#header .mynav.responsive .icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+			}
+			
+			#header .mynav.responsive a {
+			display: block;
+			text-align: left;
+			float: left;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
 			}
 		}
+		*/
 
 
 /* Banner */
@@ -3752,7 +3775,7 @@ html {
 
 				.wrapper.spotlight.style2:after {
 					box-shadow: inset 0 -1px 0 0 #41afc0, 0 1px 0 0 #41afc0;
-				}
+				}x
 
 			.wrapper.spotlight.style3 {
 				background-color: #3f4e85;
