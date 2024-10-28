@@ -129,7 +129,7 @@ html {
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: Helvetica, Helvetica, sans-serif; /*Raleway*/
-		font-size: 14.5pt;
+		font-size: 14pt;
 		font-weight: lighter;
 		line-height: 1.65;
 	}
@@ -137,7 +137,7 @@ html {
 		@media screen and (max-width: 1500px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -145,7 +145,7 @@ html {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 13.5pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -153,7 +153,7 @@ html {
 		@media screen and (max-width: 990px) {
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 12.5pt;
 			}
 
 		}
@@ -248,7 +248,7 @@ html {
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-family: Raleway, Helvetica, sans-serif;
-		font-size: 17pt;
+		font-size: 16.5pt;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
